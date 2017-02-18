@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Home</title>
+    <link rel="stylesheet" href="/static/styles/styles.css">
+  </head>
+  <body>
+    <h1>Welcome to Lambda's movie library</h1>
+    <br>
+    <h3>{{message}}</h3>
+    <br>
+    <h2><a href="/movies">Show all films</a></h2>
+    <br>
+    <h2>Search a film</h2>
+    <br>
+    <form action="/search" method="GET">
+      <input type="text" name="title">
+      <input type="submit" value="Search">
+    </form>
+    <br>
+    <h2>Add a film</h2>
+    <form action="/movie" method="POST">
+      <h3>Title:</h3>
+      <input type="text" name="title">
+      <h3>Genre:</h3>
+      <input type="text" name="genre">
+      <br>
+      <input type="submit" value="Add film">
+    </form>
+  </body>
+</html>
